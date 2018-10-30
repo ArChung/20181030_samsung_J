@@ -3177,6 +3177,9 @@ html, body {
   .s_mainContainer .s_banner ul li {
     width: 100%;
     font-size: 30px;
+    height: 95px;
+    line-height: 95px;
+    font-size: 35px;
     background-color: #ec79a7;
   }
   .s_mainContainer .s_banner ul li:not(:last-child) {
@@ -3187,6 +3190,14 @@ html, body {
   display: inline-block;
   vertical-align: text-top;
   padding: 3px 30px;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.s_mainContainer .s_banner ul li a:hover {
+  text-decoration: none;
+  color: #ffc4e1;
 }
 @media screen and (min-width: 861px) {
   .s_mainContainer .s_banner ul li:not(:last-child) {
