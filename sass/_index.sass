@@ -1,0 +1,259 @@
+
+html,body 
+	width: 100%
+	height: 100%
+
+=centerX
+	position: relative
+	left: 50%
+	+transform(translateX(-50%))
+
+=centerY
+	position: absolute
+	top: 50%
+	+transform(translateY(-50%))
+
+=center
+	position: absolute
+	left: 50%	
+	top: 50%	
+	+transform(translateY(-50%) translateX(-50%))
+.fwb
+	font-weight: bold
+.smt-5
+	margin-top: 70px
+.smt-3
+	margin-top: 30px
+.d-f
+	display: flex
+	flex-wrap: wrap
+	&.jcb
+		justify-content: space-between
+	&.jsa
+		justify-content: space-around
+	&.fce
+		justify-content: flex-end
+	&.aic
+		align-items: center
+.sp-5
+	padding: 100px 0
+.centerImg
+	display: block
+	margin: 0 auto
+.fullImg
+	width: 100%
+.s_header
+	
+
+.s_mainContainer
+	.s_btn
+		width: 230px
+		padding: 5px 0
+		height: 50px
+		line-height: 50px
+		text-align: center
+		color: #fff
+		font-size: 20px
+		background-color: #e41775
+		+border-radius(50px)
+		+dTime(.3s)
+		+phone 
+			width: 100%
+			height: 80px
+			line-height: 80px
+			font-size: 40px
+			margin-bottom: 25px
+		&:hover
+			background-color: #c91165
+			text-decoration: none
+	.s_container
+		max-width: 1024px
+		margin: 0 auto
+		padding-left: 30px
+		padding-right: 30px
+		position: relative
+		height: 100%
+		
+
+	.s_banner
+		background-color: #ec79a7
+		text-align: center
+		+phone
+			position: fixed
+			z-index: 10
+			left: 0
+			top: 0
+			width: 100%
+			
+		.menuBtn
+			position: absolute
+			top: 0
+			right: 0
+			+bg('moblieBtn.jpg')
+			z-index: 15
+			
+		ul 
+			padding: 8px 0
+			margin: 0 auto
+			position: relative
+			z-index: 16
+			+phone 
+				display: none
+				&.open
+					display: block
+				li 
+					width: 100%
+					font-size: 30px
+					background-color: #ec79a7
+					+notLast
+						border-bottom: 1px solid white
+
+			li 
+				display: inline-block
+				vertical-align: text-top
+				padding: 3px 30px
+				+pc
+					+notLast
+						border-right: 1px solid white
+
+	// index /////////////////
+	.s_index
+		+bgi('header_bg.jpg')
+		+coverBg
+		// height: 742px
+		padding: 120px 0
+		+phone 
+			height: auto
+			+bgi('m_header_bg.jpg')
+		.s_container
+			
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-wrap: wrap
+		.s_pic
+			+bg('samsung_p.png')
+			+phone 
+				+bg('m_p1.png')
+		.s_txt
+			width: 480px
+			padding-bottom: 50px
+		.s_t1
+			+bg('index_title.png')
+		.s_btns
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+	.p_container
+		background-color: #fff2f3
+	.s_p1
+		+bgi('bg1.jpg')
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		height: 696px
+		+phone 
+			height: auto
+		.s_container
+			padding-top: 100px
+		.s_t
+			+bg('title1.png')
+			+centerX
+		.s_pic
+			+bg('p1.png')
+		.s_tt
+			+bg('t1.png') 
+	
+	.s_p2
+		+bgi('bg2.jpg')
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		height: 918px
+		+phone 
+			height: auto
+		.s_container
+		.s_t
+			+bg('title2.png')
+			+centerX
+		.s_pic
+			+bg('p2.png')
+		.s_tt
+			+bg('t2.png') 
+		.s_pic2
+			+bg('p3.png')
+			margin-left: -90px
+		.s_tt2
+			+bg('t3.png') 
+		.sttt_2
+			+bg('st.png')
+			margin-top: 15px
+	.s_p3
+		+bgi('bg3.jpg')
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		height: 1055px
+		+phone 
+			height: auto
+		.s_container
+			padding-top: 100px
+		.s_t
+			+bg('title3.png') 
+			+centerX
+		.s_pic
+			+bg('p4.png')
+			// margin-left: -120px
+		.s_tt
+			+bg('t4.png') 
+		.s_txt
+			float: right
+		.sttt3
+			+bg('st2.png')
+			margin-top: 15px
+	.s_pro
+		+bgi('bg4.jpg')
+		+coverBg
+		.s_container
+			padding: 160px 0 50px
+			+phone 
+				padding: 100px 25px
+		.s_t
+			+bg('txt5.png')
+			+phone 
+				+bg('m_p2.png')
+				margin: 0 auto
+		.s_pic
+			+bg('p5.png')
+			+centerX
+			position: absolute
+			margin-left: 250px
+			top: 80px
+		.s_btns
+			max-width: 760px
+			margin: 130px auto 0
+			+phone 
+				margin: 50px auto 0
+	.s_note
+		.s_container
+			padding-top: 70px
+			padding-bottom: 70px
+		.pinkTxt
+			color: #e6186f
+		.s_title
+			font-size: 24px
+			+phone
+				font-size: 30px
+		ul 
+			font-size: 18px
+			+phone
+				font-size: 24px
+			li 
+				margin-top: 30px
+				display: flex
+				span 
+					&.pinkTxt
+						margin-right: 5px
+			// list-style-type: upper-alpha
+			// padding-left: 1.2em
+			// color: #e6186f
+			// li 
+			// 	color: black
