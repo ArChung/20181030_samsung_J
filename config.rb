@@ -15,7 +15,7 @@ javascripts_dir = "javascripts"
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
-
+output_style= :compressed
 preferred_syntax = :sass
 Encoding.default_external = 'utf-8'
 sourcemap = true
