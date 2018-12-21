@@ -239,11 +239,15 @@ html,body
 				margin: 0 auto 
 				top: 0
 				position: relative
+		.imgWrap
+			overflow: hidden
+			border-radius: 15px
+			+shadowDiv
+			img 
+				display: block
 		.s_btns
 			max-width: 760px
-			margin: 130px auto 0
-			+phone 
-				margin: 50px auto 0
+			margin: 45px auto 0
 		.s_btn
 			background-color: #f9f48e
 			font-weight: bold
@@ -256,7 +260,7 @@ html,body
 			// text-shadow: 2px 2px 5px rgba(black,0.7)
 
 	.s_note
-		background-color: #ca001e
+		background-color: #fdf1f3
 		margin-top: -1px
 		.s_container
 			padding-top: 70px 
